@@ -11,20 +11,20 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/ygokdogan/",
 
   role: {
-    tr: "Yazılım & Oyun Mühendisi · YTÜ Bilgisayar Mühendisliği",
+    tr: "Software & Game Engineer · YTÜ Bilgisayar Mühendisliği",
     en: "Software & Game Engineer · YTU Computer Engineering",
   },
   // Girişte unvanın altındaki tek cümlelik tanım
   tagline: {
-    tr: "Unity için modüler, geliştirici dostu araçlar ve sistemler geliştiriyorum; arada oyunlar da yapıyorum.",
+    tr: "Unity için modular, developer-friendly tools ve systems geliştiriyorum; arada oyunlar da yapıyorum.",
     en: "I build modular, developer-friendly tools and systems for Unity, and make games along the way.",
   },
   about: {
     tr: [
-      "Selam, ben Yusuf. Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Bir şeyler üretmeyi ve nasıl çalıştıklarını keşfetmeyi seviyorum.",
-      "En çok ilgilendiğim alan oyun geliştirme. Özellikle oyun geliştirme sürecini kolaylaştıran, tekrar kullanılabilir sistemler ve araçlar tasarlamaktan keyif alıyorum. Sadece oyun ortaya çıkarmakla değil, geliştirme sürecinin arkasındaki problemleri çözmek, esnek mimariler oluşturmak ve diğer geliştiricilerin de kullanabileceği araçlar üretmekle ilgileniyorum.",
-      "Unity ile game jam projelerinde yer aldım, C ile düşük seviyeli programlamayı keşfettim ve C++ ile raylib kullanarak simülasyonlar geliştirdim. Her proje yazılım tasarımı, problem çözme ve sıfırdan bir şeyler inşa etme konusunda bana farklı deneyimler kazandırdı.",
-      "Şu anda odağım, Unity için modüler ve geliştirici dostu araçlar ve sistemler geliştirmek. Uzun vadeli hedefim ise bunları Unity Asset Store üzerinden diğer geliştiricilerle buluşturmak.",
+      "Merhaba, ben Yusuf. Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Bir şeyler geliştirmekten ve onları çalıştıran mekanizmaları anlamaktan keyif alıyorum.",
+      "İlgi alanım ağırlıklı olarak game development üzerine. Özellikle development süreçlerini iyileştiren, tekrar kullanılabilir sistemler ve araçlar tasarlamakla ilgileniyorum. Yalnızca oyun geliştirmeye odaklanmak yerine, arka plandaki problemleri çözmekten, esnek architecture yapıları oluşturmaktan ve diğer developer'ların da faydalanabileceği araçlar geliştirmekten keyif alıyorum.",
+      "Unity game jam projelerinde çalıştım, C ile low-level programming üzerine deneyim kazandım ve raylib kullanarak C++ simulations geliştirdim. Her proje bana software design, problem-solving ve sıfırdan bir şeyler inşa etme konusunda farklı bir bakış açısı kazandırdı.",
+      "Şu anda odağım, Unity için modular ve developer-friendly tools ve systems geliştirmek. Uzun vadeli hedefim ise bu araçları Unity Asset Store üzerinden yayınlamak.",
     ],
     en: [
       "Hey, I'm Yusuf, a Computer Engineering student at Yıldız Technical University who enjoys building things and understanding what makes them work.",
@@ -45,13 +45,13 @@ const ITCH_GAMES = [
     title: "Ben Green & 960 Dwarves",
     url: "https://ygokdogan.itch.io/benjamin-green-and-960-dwarves",
     cover: "https://img.itch.zone/aW1nLzI5NjM4Mzg0LnBuZw==/315x250%23c/Grwa%2FV.png",
-    genre: { tr: "Strateji · Hayatta kalma", en: "Strategy · Survival" },
+    genre: { tr: "Strategy · Survival", en: "Strategy · Survival" },
     desc: {
-      tr: "Tatil haftan bir kuşatmaya dönüştü: mahalleni 960 tuhaf cüce bastı. Savaşmaya değil, kapını çalıp şüpheli teklifler satmaya geldiler. Yedi gün boyunca dört temel istatistiğini dengede tutmaya çalış.",
+      tr: "Tatil haftan bir kuşatmaya dönüştü: mahalleni 960 tuhaf cüce bastı. Savaşmaya değil, kapını çalıp şüpheli teklifler satmaya geldiler. Yedi gün boyunca dört temel stat'ını dengede tutmaya çalış.",
       en: "Your week off has turned into a siege: 960 bizarre dwarves have invaded your neighborhood. They're not here to fight but to ring your doorbell with suspicious deals. Keep your four core stats in balance for seven days.",
     },
     features: {
-      tr: ["Her saat rastgele bir tüccar ve absürt bir teklif: kabul et ya da reddet", "Bazı cüceler dürüst, bazıları sakalının arkasından yalan söylüyor", "Sonuçlar bazen hemen, bazen en olmadık anda geliyor"],
+      tr: ["Her saat random bir merchant ve absürt bir teklif: kabul et ya da reddet", "Bazı cüceler dürüst, bazıları sakalının arkasından yalan söylüyor", "Sonuçlar bazen hemen, bazen en olmadık anda geliyor"],
       en: ["Every hour brings a random merchant and an absurd offer: accept or decline", "Some dwarves are honest, others lie through their beards", "Consequences hit right away, or later when it's least convenient"],
     },
     jam: "Brackeys Game Jam 2026.2",
@@ -67,13 +67,13 @@ const ITCH_GAMES = [
     title: "Gunstable",
     url: "https://ygokdogan.itch.io/gunstable",
     cover: "https://img.itch.zone/aW1nLzIzNjgyMDA0LnBuZw==/315x250%23c/53yhP1.png",
-    genre: { tr: "Aksiyon · Platform · Nişancı", en: "Action · Platformer · Shooter" },
+    genre: { tr: "Action · Platformer · Shooter", en: "Action · Platformer · Shooter" },
     desc: {
-      tr: "Dengenin sadece bir yanılsama olduğu kaotik bir yandan kaydırmalı platform oyunu. Silahın dört dengesiz atış modu arasında rastgele geçiş yapıyor; beş el yapımı bölümde ilerledikçe açılan jetpack de aynı derecede güvenilmez.",
+      tr: "Dengenin sadece bir illüzyon olduğu kaotik bir side-scroller platformer. Silahın dört dengesiz fire mode arasında random geçiş yapıyor; beş handcrafted level'da ilerledikçe açılan jetpack de aynı derecede güvenilmez.",
       en: "A chaotic side-scrolling platformer where stability is just an illusion. Your gun randomly switches between four unstable firing modes, and the jetpack you unlock across five handcrafted levels is just as unreliable.",
     },
     features: {
-      tr: ["Normal atış, ağır geri tepme, saçma ve tutukluk: silah ne yapacağına kendi karar veriyor", "Jetpack her saniye zar atıyor; 1 gelirse havada kapanıyor", "5 el yapımı bölüm"],
+      tr: ["Normal shot, heavy recoil, spread shot ve jam: silah ne yapacağına kendi karar veriyor", "Jetpack her saniye zar atıyor; 1 gelirse havada kapanıyor", "5 handcrafted level"],
       en: ["Normal shot, heavy recoil, spread and jam: the gun decides for itself", "The jetpack rolls a die every second; roll a 1 and it shuts down mid-air", "5 handcrafted levels"],
     },
     jam: "Jamination 8",
@@ -89,13 +89,13 @@ const ITCH_GAMES = [
     title: "Overdrive",
     url: "https://ygokdogan.itch.io/overdrive",
     cover: "https://img.itch.zone/aW1nLzIyMjQ1NjA4LnBuZw==/315x250%23c/LZYgLU.png",
-    genre: { tr: "Aksiyon · Platform", en: "Action · Platformer" },
+    genre: { tr: "Action · Platformer", en: "Action · Platformer" },
     desc: {
-      tr: "Celeste'in platform mekaniklerinden ilham alan, hızlı tempolu bir 2D aksiyon-platform oyunu. Her odayı düşmanlardan temizle; overdrive barın biterse bütün bölüm baştan başlar.",
+      tr: "Celeste'in platforming mekaniklerinden ilham alan, hızlı tempolu bir 2D action-platformer. Her odayı enemy'lerden temizle; overdrive bar'ın biterse bütün level baştan başlar.",
       en: "A fast-paced 2D action-platformer inspired by Celeste's platforming. Clear every room of enemies; if your overdrive meter runs out, the whole level resets.",
     },
     features: {
-      tr: ["Atıl, sıçra ve kes: dash, pogo ve kılıç kombinasyonları", "Düşmana vurmak overdrive barını %15, öldürmek tamamen dolduruyor", "Minimalist siluet piksel sanatı ve glitch'li arayüz"],
+      tr: ["Dash, pogo ve slash kombinasyonları", "Enemy'ye vurmak overdrive bar'ını %15, öldürmek tamamen dolduruyor", "Minimalist silhouette pixel art ve glitch'li UI"],
       en: ["Dash, pogo and slash your way through", "Hitting an enemy refills overdrive by 15%, a kill refills it completely", "Minimalist silhouette pixel art with a glitchy UI"],
     },
     jam: "Shovel Jam 2025",
@@ -109,13 +109,13 @@ const ITCH_GAMES = [
     title: "Duelborn",
     url: "https://ygokdogan.itch.io/duelborn",
     cover: "https://img.itch.zone/aW1nLzIxMTQ4MDA3LnBuZw==/315x250%23c/1PmH1F.png",
-    genre: { tr: "Aksiyon · Nişancı · 2 oyunculu", en: "Action · Shooter · 2 players" },
+    genre: { tr: "Action · Shooter · 2-player", en: "Action · Shooter · 2 players" },
     desc: {
-      tr: "İşbirliğinin bir yalan olduğu, yukarıdan bakışlı piksel art bir hayatta kalma dövüş oyunu. İki oyuncu düşman dalgalarına karşı birlikte başlar, ama sadece biri hayatta kalabilir.",
+      tr: "Co-op'un bir yalan olduğu, top-down pixel art bir survival brawler. İki oyuncu enemy wave'lerine karşı birlikte başlar, ama sadece biri hayatta kalabilir.",
       en: "A top-down pixel art survival brawler where cooperation is a lie. Two players face waves of enemies together, but only one can survive.",
     },
     features: {
-      tr: ["Aynı bilgisayarda hızlı tempolu 2 oyunculu kaos", "Düşman dalgaları ve oyuncuya karşı sabotaj bir arada", "Tuzak, geri itme ve dost ateşiyle rakibini ele"],
+      tr: ["Aynı bilgisayarda hızlı tempolu local 2-player kaos", "Wave survival ve PvP sabotaj bir arada", "Trap, knockback ve friendly fire ile rakibini ele"],
       en: ["Fast-paced local 2-player mayhem", "Enemy wave survival meets PvP sabotage", "Use traps, knockback and friendly fire to eliminate your rival"],
     },
     team: ["ygokdogan"],
@@ -145,41 +145,41 @@ const PRIVATE_PROJECTS = [
     url: "https://caughtup.ygokdogan.dev",
     language: "TypeScript",
     desc: {
-      tr: "Dizileri tek başına ya da arkadaşlarınla birlikte takip et: bölüm bazlı, spoiler korumalı puanlar ve yorumlar. React + TypeScript arayüz, .NET API, PostgreSQL.",
+      tr: "Dizileri tek başına ya da arkadaşlarınla birlikte takip et: episode bazlı, spoiler-free rating'ler ve yorumlar. React + TypeScript frontend, .NET API, PostgreSQL.",
       en: "Track shows solo or with friends: per-episode, spoiler-aware ratings and comments. React + TypeScript frontend, .NET API, PostgreSQL.",
     },
     pushed_at: "2026-11-24",
     // Aşağıdakiler varsa proje, Projeler bölümünün en üstünde vitrin olarak gösterilir.
     stack: ["React", "TypeScript", ".NET", "PostgreSQL", "Docker"],
     features: {
-      tr: ["Arkadaş grubunla aynı diziyi takip et, kimin nerede kaldığını gör", "Bölümleri Trash'ten Peak'e puanla", "İzlemediğin bölümün puanları ve yorumları kilitli kalır, spoiler yemezsin"],
+      tr: ["Arkadaş grubunla aynı diziyi takip et, kimin nerede kaldığını gör", "Episode'ları Trash'ten Peak'e kadar rate et", "İzlemediğin episode'un rating ve yorumları kilitli kalır, spoiler yemezsin"],
       en: ["Follow a show with your group and see where everyone is", "Rate episodes from Trash to Peak", "Ratings and comments stay locked until you've watched, so no spoilers"],
     },
     shots: [
-      { src: "assets/caughtup/1-up-next.jpg", caption: { tr: "Sıradaki bölümler", en: "Up next" } },
-      { src: "assets/caughtup/2-show.jpg", caption: { tr: "Dizi sayfası", en: "Show page" } },
-      { src: "assets/caughtup/3-rating.jpg", caption: { tr: "Bölüm puanlama", en: "Episode ratings" } },
+      { src: "assets/caughtup/1-up-next.jpg", caption: { tr: "Up next", en: "Up next" } },
+      { src: "assets/caughtup/2-show.jpg", caption: { tr: "Show page", en: "Show page" } },
+      { src: "assets/caughtup/3-rating.jpg", caption: { tr: "Episode rating", en: "Episode ratings" } },
     ],
   },
   {
     name: "Ourline",
     url: "",
-    status: { tr: "mobil uygulama · geliştiriliyor", en: "mobile app · in development" },
+    status: { tr: "mobile app · geliştiriliyor", en: "mobile app · in development" },
     language: "Dart",
     desc: {
-      tr: "Çiftler için özel bir günlük: gün boyunca belirli zaman pencerelerinde birer fotoğraf paylaşıp birlikte ortak bir zaman çizelgesi oluşturuyorsunuz. Flutter mobil uygulama, Node.js + TypeScript API.",
+      tr: "Çiftler için private bir günlük: gün boyunca belirli time window'larda birer fotoğraf paylaşıp birlikte ortak bir timeline oluşturuyorsunuz. Flutter mobile app, Node.js + TypeScript API.",
       en: "A private journal for couples: share one photo in each time window of the day and build a shared timeline together. Flutter mobile app, Node.js + TypeScript API.",
     },
     pushed_at: "2026-11-24",
     stack: ["Flutter", "Dart", "Node.js", "TypeScript", "Prisma", "PostgreSQL", "Docker", "Cloudflare R2"],
     features: {
-      tr: ["Gün, ayarlanabilir zaman pencerelerine bölünür; her pencerede ikiniz de bir an paylaşırsınız", "Davet koduyla eşleşme, ortak kapak fotoğrafı ve partnere özel takma ad", "Fotoğraflar imzalı adreslerle doğrudan bulut depolamaya yüklenir"],
+      tr: ["Gün, ayarlanabilir time window'lara bölünür; her window'da ikiniz de bir moment paylaşırsınız", "Invite code ile eşleşme, ortak cover fotoğrafı ve partnere özel nickname", "Fotoğraflar signed URL'lerle doğrudan cloud storage'a upload edilir"],
       en: ["The day is split into configurable windows; each of you shares one moment per window", "Pair with an invite code, set a shared cover and a private nickname for your partner", "Photos upload straight to cloud storage through signed URLs"],
     },
     shots: [
-      { src: "assets/ourline/1-today.jpg", caption: { tr: "Bugün", en: "Today" } },
-      { src: "assets/ourline/2-journey.jpg", caption: { tr: "Günün yolculuğu", en: "Today's journey" } },
-      { src: "assets/ourline/3-us.jpg", caption: { tr: "Ortak alan", en: "Shared space" } },
+      { src: "assets/ourline/1-today.jpg", caption: { tr: "Today", en: "Today" } },
+      { src: "assets/ourline/2-journey.jpg", caption: { tr: "Today's journey", en: "Today's journey" } },
+      { src: "assets/ourline/3-us.jpg", caption: { tr: "Shared space", en: "Shared space" } },
     ],
   },
 ];
@@ -199,7 +199,7 @@ const QUESTS = [
   {
     title: "GOAP System",
     desc: {
-      tr: "Unity için modüler bir Goal-Oriented Action Planning (GOAP) sistemi: yapay zekâ ajanları, hedeflerine ulaşmak için hangi eylemleri hangi sırayla yapacaklarını kendileri planlar.",
+      tr: "Unity için modular bir Goal-Oriented Action Planning (GOAP) system: AI agent'lar, goal'lerine ulaşmak için hangi action'ları hangi sırayla yapacaklarını kendileri planlar.",
       en: "A modular Goal-Oriented Action Planning (GOAP) system for Unity: AI agents plan for themselves which actions to take, and in what order, to reach their goals.",
     },
     status: { tr: "geliştiriliyor", en: "in development" },
@@ -208,7 +208,7 @@ const QUESTS = [
   {
     title: "GOAP Visualizer",
     desc: {
-      tr: "GOAP ajanlarının hedeflerini, planlarını ve eylem zincirlerini Unity editöründe görselleştiren bir araç; bir ajanın neden o kararı verdiğini görmeyi kolaylaştırır.",
+      tr: "GOAP agent'larının goal, plan ve action chain'lerini Unity Editor'de görselleştiren bir tool; bir agent'ın neden o kararı verdiğini görmeyi kolaylaştırır.",
       en: "A Unity editor tool that visualizes GOAP agents' goals, plans and action chains, making it easy to see why an agent made a decision.",
     },
     status: { tr: "geliştiriliyor", en: "in development" },
@@ -223,7 +223,7 @@ const ACHIEVEMENTS = [
   {
     title: { tr: "YILDIZ JAM 2026 · Koordinatör", en: "YILDIZ JAM 2026 · Coordinator" },
     desc: {
-      tr: "SKY LAB'in 4.'sünü düzenlediği YILDIZ JAM'in koordinatörlüğünü yürüttüm: yaklaşık 4 ay süren hazırlıkla bir oyun sektörü zirvesi ve oyun geliştirme yarışması.",
+      tr: "SKY LAB'in 4.'sünü düzenlediği YILDIZ JAM'in koordinatörlüğünü yürüttüm: yaklaşık 4 ay süren hazırlıkla bir game industry zirvesi ve bir game jam.",
       en: "Coordinated the 4th YILDIZ JAM by SKY LAB: about four months of preparation for a game industry summit and a game development competition.",
     },
     year: 2026,
