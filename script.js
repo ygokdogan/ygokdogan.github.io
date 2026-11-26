@@ -364,7 +364,7 @@ function renderRepos() {
     const desc = r.descI18n ? r.descI18n[lang] : r.description;
     const color = LANG_COLORS[r.language] || "#a598bd";
     const tag = r.html_url ? "a" : "div";
-    const big = repoFilter === "all" && pinned && i === 0;
+    const big = repoFilter === "all" && i === 0; // sıradaki ilk proje (REPO_ORDER) büyük kart
     return `
     <${tag} class="repo${pinned ? " pinned" : ""}${big ? " big" : ""}" style="--lc:${color}"${r.html_url ? ` href="${esc(r.html_url)}" target="_blank" rel="noopener"` : ""}>
       <div class="repo-top">
