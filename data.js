@@ -12,7 +12,7 @@ const PROFILE = {
     en: "Software & Game Engineer · YTU Computer Engineering",
   },
   tagline: {
-    tr: "Unity için modular, developer-friendly tools ve systems geliştiriyorum; arada oyunlar da yapıyorum.",
+    tr: "Unity için modular, developer-friendly tool ve sistemler geliştiriyorum; arada oyunlar da yapıyorum.",
     en: "I build modular, developer-friendly tools and systems for Unity, and make games along the way.",
   },
   about: {
@@ -20,7 +20,7 @@ const PROFILE = {
       "Merhaba, ben Yusuf. Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Bir şeyler geliştirmekten ve onları çalıştıran mekanizmaları anlamaktan keyif alıyorum.",
       "İlgi alanım ağırlıklı olarak game development üzerine. Özellikle development süreçlerini iyileştiren, tekrar kullanılabilir sistemler ve araçlar tasarlamakla ilgileniyorum. Yalnızca oyun geliştirmeye odaklanmak yerine, arka plandaki problemleri çözmekten, esnek architecture yapıları oluşturmaktan ve diğer developer'ların da faydalanabileceği araçlar geliştirmekten keyif alıyorum.",
       "Unity game jam projelerinde çalıştım, C ile low-level programming üzerine deneyim kazandım ve raylib kullanarak C++ simulations geliştirdim. Her proje bana software design, problem-solving ve sıfırdan bir şeyler inşa etme konusunda farklı bir bakış açısı kazandırdı.",
-      "Şu anda odağım, Unity için modular ve developer-friendly tools ve systems geliştirmek. Uzun vadeli hedefim ise bu araçları Unity Asset Store üzerinden yayınlamak.",
+      "Şu anda odağım, Unity için modular ve developer-friendly tool ve sistemler geliştirmek, ortaya çıkan tool ve sistemleri de Unity Asset Store üzerinden yayınlamak.",
     ],
     en: [
       "Hey, I'm Yusuf, a Computer Engineering student at Yıldız Technical University who enjoys building things and understanding what makes them work.",
@@ -179,7 +179,7 @@ const QUESTS = [
   {
     title: "GOAP System",
     desc: {
-      tr: "Unity için modular bir Goal-Oriented Action Planning (GOAP) system: AI agent'lar, goal'lerine ulaşmak için hangi action'ları hangi sırayla yapacaklarını kendileri planlar.",
+      tr: "Unity için modular bir Goal-Oriented Action Planning (GOAP) sistemi: AI agent'lar, goal'lerine ulaşmak için hangi action'ları hangi sırayla yapacaklarını kendileri planlar.",
       en: "A modular Goal-Oriented Action Planning (GOAP) system for Unity: AI agents plan for themselves which actions to take, and in what order, to reach their goals.",
     },
     status: { tr: "geliştiriliyor", en: "in development" },

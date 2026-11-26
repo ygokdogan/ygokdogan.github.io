@@ -130,7 +130,7 @@ const STRINGS = {
   },
 };
 
-let lang = localStorage.getItem("lang") || (navigator.language.startsWith("tr") ? "tr" : "en");
+let lang = localStorage.getItem("lang") || "en";
 
 // t("usedIn", { n: 3 }) -> "3 projede kullanıldı"
 function t(key, vars = {}) {
