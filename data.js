@@ -1,3 +1,5 @@
+// Sitedeki bütün içerik burada. { tr, en } olan alanlar dile göre seçiliyor.
+
 const PROFILE = {
   name: "Yusuf Emir Gökdoğan",
   githubUser: "ygokdogan",
@@ -9,7 +11,6 @@ const PROFILE = {
     tr: "Software & Game Engineer · YTÜ Bilgisayar Mühendisliği",
     en: "Software & Game Engineer · YTU Computer Engineering",
   },
-  // Girişte unvanın altındaki tek cümlelik tanım
   tagline: {
     tr: "Unity için modular, developer-friendly tools ve systems geliştiriyorum; arada oyunlar da yapıyorum.",
     en: "I build modular, developer-friendly tools and systems for Unity, and make games along the way.",
@@ -29,12 +30,12 @@ const PROFILE = {
     ],
   },
   skills: ["C", "C++", "C#", "Unity", "raylib", ".NET Core", "Git"],
-  // Tech Arsenal'de gösterilmeyecekler (projelerde kullanılsa da)
+  // tech arsenal'de gizlenenler
   arsenalHide: ["ShaderLab", "Node.js", "Prisma", "Cloudflare R2", "Angular", "Dart"],
 };
 
-// itch.io'nun herkese açık bir API'si olmadığı için oyunlar burada listelenir.
-// Yeni oyun eklediğinde buraya bir satır ekle.
+// itch.io'nun public API'si yok, oyunlar elle ekleniyor.
+// jam'i olanlar achievements'ta da otomatik çıkıyor.
 const ITCH_GAMES = [
   {
     title: "Ben Green & 960 Dwarves",
@@ -121,15 +122,13 @@ const ITCH_GAMES = [
   },
 ];
 
+// GitHub repoları API'den geliyor. Sıralama: önce REPO_ORDER (ilki büyük kart),
+// sonra en son güncellenenler, en sonda LAST_LANGUAGES dilindekiler.
 const HIDDEN_REPOS = ["CarRentalProject"];
-// Sıralama: önce bu listedekiler (bu sırayla), sonra diğerleri (en yeni üstte),
-// en altta da LAST_LANGUAGES dilindeki projeler.
 const REPO_ORDER = ["particle-lab", "Gunstable", "BenGreenAndDwarves"];
 const LAST_LANGUAGES = ["C"];
 
-// GitHub'da private olan ama göstermek istediğin projeler.
-// Kodu açılmaz; sitede "kapalı kaynak" etiketiyle görünür.
-// url: projenin canlı sitesi (boş bırakırsan link verilmez).
+// Kapalı kaynak projeler. shots varsa üstte vitrin olarak, yoksa repo kartı olarak görünüyor.
 const PRIVATE_PROJECTS = [
   {
     name: "CaughtUp",
@@ -140,7 +139,6 @@ const PRIVATE_PROJECTS = [
       en: "Track shows solo or with friends: per-episode, spoiler-aware ratings and comments. React + TypeScript frontend, .NET API, PostgreSQL.",
     },
     pushed_at: "2026-11-24",
-    // Aşağıdakiler varsa proje, Projeler bölümünün en üstünde vitrin olarak gösterilir.
     stack: ["React", "TypeScript", ".NET", "PostgreSQL", "Docker"],
     features: {
       tr: ["Arkadaş grubunla aynı diziyi takip et, kimin nerede kaldığını gör", "Episode'ları Trash'ten Peak'e kadar rate et", "İzlemediğin episode'un rating ve yorumları kilitli kalır, spoiler yemezsin"],
@@ -175,17 +173,8 @@ const PRIVATE_PROJECTS = [
   },
 ];
 
-// ---------------------------------------------------------------
-// AKTİF GÖREVLER: şu anda geliştirdiğin Unity sistemleri / araçları.
-// Liste boşken bölüm sitede görünmez. Örnek:
-// {
-//   title: "Modüler Envanter Sistemi",
-//   desc: { tr: "…", en: "…" },
-//   status: { tr: "Asset Store için hazırlanıyor", en: "Preparing for the Asset Store" },
-//   progress: 60,                 // 0–100
-//   tags: ["Unity", "C#", "Editor Tools"],
-//   url: "",                      // varsa repo / store linki
-// },
+// Şu an üzerinde çalıştıklarım. progress (0-100) ve url isteğe bağlı.
+// Boş bırakılırsa bölüm gizleniyor.
 const QUESTS = [
   {
     title: "GOAP System",
@@ -207,9 +196,7 @@ const QUESTS = [
   },
 ];
 
-// BAŞARIMLAR: game jam'ler oyunlardan (ITCH_GAMES.jam) otomatik gelir.
-// Etkinlik, ödül, staj gibi diğerlerini buraya ekle. Örnek:
-// { title: { tr: "…", en: "…" }, desc: { tr: "…", en: "…" }, year: 2026, url: "" },
+// Jam dışındaki başarılar (etkinlik, ödül, staj...). icon: lucide ikon adı.
 const ACHIEVEMENTS = [
   {
     title: { tr: "YILDIZ JAM 2026 · Koordinatör", en: "YILDIZ JAM 2026 · Coordinator" },
