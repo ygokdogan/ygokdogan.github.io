@@ -542,3 +542,15 @@ a.quest-card:hover { border-color: var(--teal); }
 .ach.featured .ach-ic { color: var(--pink); background: color-mix(in srgb, var(--pink) 14%, transparent); border-color: color-mix(in srgb, var(--pink) 40%, transparent); }
 .ach.featured:hover { border-color: var(--pink); }
 .ach-txt small { line-height: 1.45; }
+
+/* Girişteki logo butonları */
+.btn.icon-btn { position: relative; width: 44px; height: 44px; padding: 0; justify-content: center; }
+.btn.icon-btn .ic.brand { width: 20px; height: 20px; }
+.btn.icon-btn::after { /* küçük ipucu */
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translate(-50%, 4px);
+  padding: 3px 8px; border-radius: 5px; white-space: nowrap; pointer-events: none;
+  font: 600 0.72rem "JetBrains Mono", monospace; color: var(--ink); background: var(--text);
+  opacity: 0; transition: opacity .15s, transform .15s;
+}
+.btn.icon-btn:hover::after, .btn.icon-btn:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+.btn.icon-btn:hover { color: var(--sand); border-color: var(--sand); }

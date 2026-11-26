@@ -1,8 +1,3 @@
-// ============================================================
-//  Portfolyonu buradan düzenle — Edit your portfolio here.
-//  Sitenin geri kalanına dokunmana gerek yok.
-// ============================================================
-
 const PROFILE = {
   name: "Yusuf Emir Gökdoğan",
   githubUser: "ygokdogan",
@@ -126,11 +121,7 @@ const ITCH_GAMES = [
   },
 ];
 
-// GitHub repoları sayfa açılırken otomatik çekilir.
-// Gizlemek istediğin repoları buraya yaz:
 const HIDDEN_REPOS = ["CarRentalProject"];
-// Öne çıkarmak (en başta göstermek) istediklerin:
-const PINNED_REPOS = ["particle-lab", "ProjectTDS", "panel-de-pon"];
 // Sıralama: önce bu listedekiler (bu sırayla), sonra diğerleri (en yeni üstte),
 // en altta da LAST_LANGUAGES dilindeki projeler.
 const REPO_ORDER = ["particle-lab", "Gunstable", "BenGreenAndDwarves"];

@@ -42,6 +42,7 @@ const CART_COLORS = [["#ff5c8a", "#c2366a"], ["#3fd0c9", "#21918c"], ["#ffb454",
 let lang = localStorage.getItem("lang") || (navigator.language.startsWith("tr") ? "tr" : "en");
 let repos = null;
 const PRIVATE = typeof PRIVATE_PROJECTS !== "undefined" ? PRIVATE_PROJECTS : [];
+const PINNED = typeof PINNED_REPOS !== "undefined" ? PINNED_REPOS : [];
 let repoFilter = "all";
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -85,6 +86,7 @@ function renderStatic() {
   $("#tagline").hidden = !PROFILE.tagline;
   $("#ghBtn").href = ghUrl;
   $("#itchBtn").href = itchUrl;
+  if (PROFILE.linkedin) $("#liBtn").href = PROFILE.linkedin; else $("#liBtn").remove();
   $("#aboutText").innerHTML = PROFILE.about[lang].map((p) => `<p>${esc(p)}</p>`).join("");
   renderCard();
   $("#year").textContent = new Date().getFullYear();
@@ -296,7 +298,7 @@ async function loadRepos() {
     repos = [...extra, ...data
       .filter((r) => !r.fork && !r.archived && !HIDDEN_REPOS.includes(r.name) && r.name !== PROFILE.githubUser)
       .sort((a, b) => {
-        const order = typeof REPO_ORDER !== "undefined" ? REPO_ORDER : PINNED_REPOS;
+        const order = typeof REPO_ORDER !== "undefined" ? REPO_ORDER : PINNED;
         const last = typeof LAST_LANGUAGES !== "undefined" ? LAST_LANGUAGES : [];
         const oa = order.indexOf(a.name), ob = order.indexOf(b.name);
         if (oa !== -1 || ob !== -1) return (oa === -1 ? 99 : oa) - (ob === -1 ? 99 : ob);
@@ -358,7 +360,7 @@ function renderRepos() {
   const fmt = new Intl.DateTimeFormat(lang === "tr" ? "tr-TR" : "en-US", { month: "short", year: "numeric" });
   const shown = repos.filter((r) => repoFilter === "all" || r.language === repoFilter);
   list.innerHTML = shown.map((r, i) => {
-    const pinned = r.private || PINNED_REPOS.includes(r.name);
+    const pinned = r.private || PINNED.includes(r.name);
     const desc = r.descI18n ? r.descI18n[lang] : r.description;
     const color = LANG_COLORS[r.language] || "#a598bd";
     const tag = r.html_url ? "a" : "div";
