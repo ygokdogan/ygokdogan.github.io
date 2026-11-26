@@ -100,7 +100,8 @@ const Sand = (() => {
     c.textBaseline = "middle";
     c.fillStyle = "#fff";
     const lineHeight = size * 1.02;
-    const centerY = H * 0.42;
+    // kısa ekranlarda altındaki yazılara yer kalsın diye isim biraz yukarıda
+    const centerY = H * (H * CELL < 700 ? 0.34 : 0.42);
     lines.forEach((line, i) => {
       c.fillText(line, W / 2, centerY + (i - (lines.length - 1) / 2) * lineHeight);
     });
