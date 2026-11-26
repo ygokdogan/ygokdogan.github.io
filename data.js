@@ -163,8 +163,8 @@ const PRIVATE_PROJECTS = [
   },
   {
     name: "Ourline",
-    url: "",
-    status: { tr: "mobile app · geliştiriliyor", en: "mobile app · in development" },
+    url: "https://ourline.ygokdogan.dev",
+    status: { tr: "iOS & Android · yakında", en: "iOS & Android · coming soon" },
     language: "Dart",
     desc: {
       tr: "Çiftler için private bir günlük: gün boyunca belirli time window'larda birer fotoğraf paylaşıp birlikte ortak bir timeline oluşturuyorsunuz. Flutter mobile app, Node.js + TypeScript API.",
